@@ -1,19 +1,37 @@
+// ===== MENÚ =====
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
 const links = menu.querySelectorAll("a");
 const productos = document.querySelectorAll(".producto");
 
-menuBtn.addEventListener("click", () => {
+// Abrir / cerrar menú (FIX mobile)
+menuBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
   menu.classList.toggle("active");
 });
 
+// Evitar que tocar el menú lo cierre
+menu.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
+// Cerrar menú tocando fuera
+document.addEventListener("click", () => {
+  menu.classList.remove("active");
+});
+
+// Filtrado + cerrar menú
 links.forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
+
     const categoria = link.dataset.categoria;
 
     productos.forEach(producto => {
-      if (categoria === "todos" || producto.dataset.categoria === categoria) {
+      if (
+        categoria === "todos" ||
+        producto.dataset.categoria === categoria
+      ) {
         producto.style.display = "block";
       } else {
         producto.style.display = "none";
@@ -24,6 +42,7 @@ links.forEach(link => {
   });
 });
 
+// ===== CARRUSEL =====
 document.querySelectorAll(".carousel").forEach(carousel => {
   const mainImg = carousel.querySelector(".carousel-img");
   const images = carousel.querySelectorAll(".carousel-images img");
@@ -42,7 +61,7 @@ document.querySelectorAll(".carousel").forEach(carousel => {
     showImage(index - 1);
   });
 
-  // 👉 SWIPE MOBILE
+  // ===== SWIPE MOBILE =====
   let startX = 0;
 
   carousel.addEventListener("touchstart", e => {
@@ -62,4 +81,3 @@ document.querySelectorAll(".carousel").forEach(carousel => {
     }
   });
 });
-
