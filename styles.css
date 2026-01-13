@@ -217,6 +217,79 @@ body {
   background: rgba(0,0,0,0.8);
 }
 
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Header */
+  .header {
+    padding: 12px 16px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .logo {
+    width: 40px;
+    height: auto;
+  }
+
+  .brand h1 {
+    font-size: 18px;
+  }
+
+  /* Botón menú */
+  .menu-btn {
+    font-size: 26px;
+  }
+
+  /* Menú desplegable */
+  .menu {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .menu ul li a {
+    font-size: 18px;
+    padding: 12px 0;
+    display: block;
+  }
+
+  /* Catálogo */
+  .catalogo {
+    padding: 16px;
+    gap: 20px;
+  }
+
+  /* Productos */
+  .producto {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .producto h3 {
+    font-size: 18px;
+  }
+
+  .producto p {
+    font-size: 16px;
+  }
+
+  /* Carrusel imágenes */
+  .carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+}
 .stock {
   font-weight: 600;
 }
+
