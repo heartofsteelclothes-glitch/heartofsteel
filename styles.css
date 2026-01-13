@@ -150,7 +150,7 @@ body {
 .menu {
   position: fixed;
   top: 0;
-  right: -260px;
+  right: -100%;
   width: 250px;
   height: 100%;
   background-color: #111;
@@ -298,3 +298,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
