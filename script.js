@@ -1,83 +1,164 @@
-// ===== MENÚ =====
+// =====================
+// MENU HAMBURGUESA
+// =====================
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
-const links = menu.querySelectorAll("a");
-const productos = document.querySelectorAll(".producto");
 
-// Abrir / cerrar menú (FIX mobile)
-menuBtn.addEventListener("click", (e) => {
+menu.classList.remove("active");
+
+menuBtn.addEventListener("click", e => {
   e.stopPropagation();
   menu.classList.toggle("active");
 });
 
-// Evitar que tocar el menú lo cierre
-menu.addEventListener("click", (e) => {
-  e.stopPropagation();
-});
-
-// Cerrar menú tocando fuera
-document.addEventListener("click", () => {
-  menu.classList.remove("active");
-});
-
-// Filtrado + cerrar menú
-links.forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
-
-    const categoria = link.dataset.categoria;
-
-    productos.forEach(producto => {
-      if (
-        categoria === "todos" ||
-        producto.dataset.categoria === categoria
-      ) {
-        producto.style.display = "block";
-      } else {
-        producto.style.display = "none";
-      }
-    });
-
+menu.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
     menu.classList.remove("active");
   });
 });
 
-// ===== CARRUSEL =====
-document.querySelectorAll(".carousel").forEach(carousel => {
-  const mainImg = carousel.querySelector(".carousel-img");
-  const images = carousel.querySelectorAll(".carousel-images img");
-  let index = 0;
+// =====================
+// CARGA DE PRODUCTOS DESDE JSON
+// =====================
+const catalogo = document.getElementById("catalogo");
 
-  const showImage = (i) => {
-    index = (i + images.length) % images.length;
-    mainImg.src = images[index].src;
-  };
+fetch("productos.json")
+  .then(res => res.json())
+  .then(productos => {
+    productos.forEach(prod => {
+      const producto = document.createElement("div");
+      producto.className = "producto";
+      producto.dataset.categoria = prod.categoria;
+      producto.dataset.titulo = prod.titulo;
+      producto.dataset.precio = prod.precio;
+      producto.dataset.stock = prod.stock;
 
-  carousel.querySelector(".next").addEventListener("click", () => {
-    showImage(index + 1);
+      producto.innerHTML = `
+        <div class="carousel">
+          <button class="prev">‹</button>
+          <img src="${prod.imagenes[0]}" class="carousel-img fade">
+          <button class="next">›</button>
+
+          <div class="carousel-images">
+            ${prod.imagenes.map(img => `<img src="${img}">`).join("")}
+          </div>
+        </div>
+
+        <div class="info">
+          <h2>${prod.titulo}</h2>
+          <p class="precio">${prod.precio}</p>
+          <p class="stock disponible">${prod.stock}</p>
+        </div>
+      `;
+
+      catalogo.appendChild(producto);
+    });
+
+    iniciarCarruseles();
+    activarFiltro();
+    activarModal();
   });
 
-  carousel.querySelector(".prev").addEventListener("click", () => {
-    showImage(index - 1);
+// =====================
+// FILTRO POR CATEGORIA
+// =====================
+function activarFiltro() {
+  const productos = document.querySelectorAll(".producto");
+
+  menu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const categoria = link.dataset.categoria;
+
+      productos.forEach(prod => {
+        prod.style.display =
+          categoria === "todos" || prod.dataset.categoria === categoria
+            ? "block"
+            : "none";
+      });
+    });
   });
+}
 
-  // ===== SWIPE MOBILE =====
-  let startX = 0;
+// =====================
+// CARRUSEL + SWIPE + FADE
+// =====================
+function iniciarCarruseles() {
+  document.querySelectorAll(".carousel").forEach(carousel => {
+    const mainImg = carousel.querySelector(".carousel-img");
+    const images = carousel.querySelectorAll(".carousel-images img");
+    let index = 0;
 
-  carousel.addEventListener("touchstart", e => {
-    startX = e.touches[0].clientX;
-  });
+    const showImage = i => {
+      index = (i + images.length) % images.length;
+      mainImg.classList.remove("fade");
+      void mainImg.offsetWidth;
+      mainImg.src = images[index].src;
+      mainImg.classList.add("fade");
+    };
 
-  carousel.addEventListener("touchend", e => {
-    const endX = e.changedTouches[0].clientX;
-    const diff = startX - endX;
+    carousel.querySelector(".next").addEventListener("click", e => {
+      e.stopPropagation();
+      showImage(index + 1);
+    });
 
-    if (Math.abs(diff) > 50) {
-      if (diff > 0) {
-        showImage(index + 1); // swipe izquierda
-      } else {
-        showImage(index - 1); // swipe derecha
+    carousel.querySelector(".prev").addEventListener("click", e => {
+      e.stopPropagation();
+      showImage(index - 1);
+    });
+
+    // SWIPE MOBILE
+    let startX = 0;
+
+    carousel.addEventListener("touchstart", e => {
+      startX = e.touches[0].clientX;
+    });
+
+    carousel.addEventListener("touchend", e => {
+      const endX = e.changedTouches[0].clientX;
+      const diff = startX - endX;
+
+      if (Math.abs(diff) > 50) {
+        diff > 0 ? showImage(index + 1) : showImage(index - 1);
       }
+    });
+  });
+}
+
+// =====================
+// MODAL PRODUCTO
+// =====================
+function activarModal() {
+  const modal = document.getElementById("modalProducto");
+  const modalImg = document.getElementById("modalImg");
+  const modalTitulo = document.getElementById("modalTitulo");
+  const modalPrecio = document.getElementById("modalPrecio");
+  const modalStock = document.getElementById("modalStock");
+  const closeBtn = document.querySelector(".close");
+
+  document.querySelectorAll(".producto").forEach(prod => {
+    prod.addEventListener("click", e => {
+      if (
+        e.target.classList.contains("prev") ||
+        e.target.classList.contains("next")
+      ) return;
+
+      modalImg.src = prod.querySelector(".carousel-img").src;
+      modalTitulo.textContent = prod.dataset.titulo;
+      modalPrecio.textContent = prod.dataset.precio;
+      modalStock.textContent = prod.dataset.stock;
+
+      modal.classList.add("active");
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("active");
+  });
+
+  modal.addEventListener("click", e => {
+    if (e.target === modal) {
+      modal.classList.remove("active");
     }
   });
-});
+}
