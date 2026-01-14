@@ -1,4 +1,3 @@
-
 // MENU HAMBURGUESA
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
@@ -16,7 +15,9 @@ menu.querySelectorAll("a").forEach(link => {
   });
 });
 
+
 // CARGA DE PRODUCTOS DESDE JSON
+
 const catalogo = document.getElementById("catalogo");
 
 fetch("productos.json")
@@ -29,7 +30,7 @@ fetch("productos.json")
       producto.dataset.titulo = prod.titulo;
       producto.dataset.precio = prod.precio;
       producto.dataset.stock = prod.stock;
-
+      producto.dataset.descripcion = prod.descripcion;
       producto.innerHTML = `
         <div class="carousel">
           <button class="prev">‹</button>
@@ -56,7 +57,9 @@ fetch("productos.json")
     activarModal();
   });
 
+
 // FILTRO POR CATEGORIA
+
 function activarFiltro() {
   const productos = document.querySelectorAll(".producto");
 
@@ -75,7 +78,9 @@ function activarFiltro() {
   });
 }
 
+
 // CARRUSEL + SWIPE + FADE
+
 function iniciarCarruseles() {
   document.querySelectorAll(".carousel").forEach(carousel => {
     const mainImg = carousel.querySelector(".carousel-img");
@@ -118,13 +123,16 @@ function iniciarCarruseles() {
   });
 }
 
+
 // MODAL PRODUCTO
+
 function activarModal() {
   const modal = document.getElementById("modalProducto");
   const modalImg = document.getElementById("modalImg");
   const modalTitulo = document.getElementById("modalTitulo");
   const modalPrecio = document.getElementById("modalPrecio");
   const modalStock = document.getElementById("modalStock");
+  const modalDesc = document.getElementById("modalDesc");
   const closeBtn = document.querySelector(".close");
 
   document.querySelectorAll(".producto").forEach(prod => {
@@ -138,6 +146,7 @@ function activarModal() {
       modalTitulo.textContent = prod.dataset.titulo;
       modalPrecio.textContent = prod.dataset.precio;
       modalStock.textContent = prod.dataset.stock;
+      modalDesc.textContent = prod.dataset.descripcion || "";
 
       modal.classList.add("active");
     });
@@ -153,4 +162,3 @@ function activarModal() {
     }
   });
 }
-
