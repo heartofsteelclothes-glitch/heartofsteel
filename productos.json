@@ -4,6 +4,7 @@
     "titulo": "Remera Negra \"96\"",
     "precio": "$13.000",
     "stock": 1,
+    "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
       "imagenes/remera1.1.jpg",
       "imagenes/remera1.2.jpg"
@@ -13,7 +14,8 @@
     "categoria": "remeras",
     "titulo": "Remera negra \"Scarface\"",
     "precio": "$13.000",
-    "stock": 1,
+    "stock": "Sin Stock",
+    "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
       "imagenes/remera2.1.jpg",
       "imagenes/remera2.2.jpg"
@@ -24,6 +26,7 @@
     "titulo": "Remera Negra \"FOCLUB\"",
     "precio": "$13.000",
     "stock": 1,
+    "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
       "imagenes/remera3.1.jpg",
       "imagenes/remera3.2.jpg"
@@ -34,6 +37,7 @@
     "titulo": "Remera blanca \"METERIOUS\"",
     "precio": "$13.000",
     "stock": 2,
+    "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
       "imagenes/remera4.1.jpg",
       "imagenes/remera4.2.jpg"
@@ -44,6 +48,7 @@
     "titulo": "Remera blanca \"WORKATION\"",
     "precio": "$13.000",
     "stock": 1,
+    "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
       "imagenes/remera5.1.jpg",
       "imagenes/remera5.2.jpg"
@@ -54,6 +59,7 @@
     "titulo": "Remera azul \"FOCLUB\"",
     "precio": "$13.000",
     "stock": 1,
+    "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
       "imagenes/remera6.1.jpg",
       "imagenes/remera6.2.jpg"
@@ -64,6 +70,7 @@
     "titulo": "Remera gris \"75\"",
     "precio": "$13.000",
     "stock": 1,
+    "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
       "imagenes/remera7.1.jpg",
       "imagenes/remera7.2.jpg"
@@ -74,6 +81,7 @@
     "titulo": "Remera azul \"WORKATION\"",
     "precio": "$13.000",
     "stock": 1,
+    "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
       "imagenes/remera8.1.jpg",
       "imagenes/remera8.2.jpg",
@@ -85,6 +93,7 @@
     "titulo": "Remera blanca \"FIRMES & CONSTANTES\"",
     "precio": "$13.000",
     "stock": 1,
+    "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
       "imagenes/remera9.1.jpg",
       "imagenes/remera9.2.jpg",
@@ -96,6 +105,7 @@
     "titulo": "Remera verde \"DANGEROUS\"",
     "precio": "$13.000",
     "stock": 1,
+    "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
       "imagenes/remera10.1.jpg",
       "imagenes/remera10.2.jpg",
