@@ -2,7 +2,7 @@
   {
     "categoria": "remeras",
     "titulo": "Remera Negra \"96\"",
-    "precio": "$13.000",
+    "precio": "$15.000",
     "stock": 1,
     "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
@@ -24,7 +24,7 @@
   {
     "categoria": "remeras",
     "titulo": "Remera Negra \"FOCLUB\"",
-    "precio": "$13.000",
+    "precio": "$15.000",
     "stock": 1,
     "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
@@ -35,7 +35,7 @@
   {
     "categoria": "remeras",
     "titulo": "Remera blanca \"METERIOUS\"",
-    "precio": "$13.000",
+    "precio": "$15.000",
     "stock": 2,
     "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
@@ -46,7 +46,7 @@
   {
     "categoria": "remeras",
     "titulo": "Remera blanca \"WORKATION\"",
-    "precio": "$13.000",
+    "precio": "$15.000",
     "stock": 1,
     "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
@@ -57,7 +57,7 @@
   {
     "categoria": "remeras",
     "titulo": "Remera azul \"FOCLUB\"",
-    "precio": "$13.000",
+    "precio": "$15.000",
     "stock": 1,
     "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
@@ -68,7 +68,7 @@
   {
     "categoria": "remeras",
     "titulo": "Remera gris \"75\"",
-    "precio": "$13.000",
+    "precio": "$15.000",
     "stock": 1,
     "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
@@ -79,7 +79,7 @@
   {
     "categoria": "remeras",
     "titulo": "Remera azul \"WORKATION\"",
-    "precio": "$13.000",
+    "precio": "$15.000",
     "stock": 1,
     "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
@@ -91,7 +91,7 @@
   {
     "categoria": "remeras",
     "titulo": "Remera blanca \"FIRMES & CONSTANTES\"",
-    "precio": "$13.000",
+    "precio": "$15.000",
     "stock": 1,
     "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
@@ -103,7 +103,7 @@
   {
     "categoria": "remeras",
     "titulo": "Remera verde \"DANGEROUS\"",
-    "precio": "$13.000",
+    "precio": "$15.000",
     "stock": 1,
     "descripcion": "Remera oversize de excelente calidad",
     "imagenes": [
@@ -114,3 +114,4 @@
     ]
   }
 ]
+
