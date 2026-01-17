@@ -112,6 +112,216 @@
       "imagenes/remera10.3.jpg",
       "imagenes/remera10.4.jpg"
     ]
+  },
+  {
+    "categoria": "remeras",
+    "titulo": "Remera verde",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 3",
+    "imagenes": [
+      "imagenes/remera11.1.jpg",
+      "imagenes/remera11.2.jpg"
+    ]
+  },
+  {
+    "categoria": "remeras",
+    "titulo": "Remera blanca",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 4",
+    "imagenes": [
+      "imagenes/remera12.1.jpg",
+      "imagenes/remera12.2.jpg"
+    ]
+  },
+  {
+    "categoria": "remeras",
+    "titulo": "Remera marrón",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 4",
+    "imagenes": [
+      "imagenes/remera13.1.jpg",
+      "imagenes/remera13.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera negra",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 5",
+    "imagenes": [
+      "imagenes/remera14.1.jpg",
+      "imagenes/remera14.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera blanca",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 4",
+    "imagenes": [
+      "imagenes/remera15.1.jpg",
+      "imagenes/remera15.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera negra",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 5",
+    "imagenes": [
+      "imagenes/remera16.1.jpg",
+      "imagenes/remera16.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera negra",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 5",
+    "imagenes": [
+      "imagenes/remera17.1.jpg",
+      "imagenes/remera17.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera blanca",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 5",
+    "imagenes": [
+      "imagenes/remera18.1.jpg",
+      "imagenes/remera18.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera marrón",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 4",
+    "imagenes": [
+      "imagenes/remera19.1.jpg",
+      "imagenes/remera19.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera gris",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 4",
+    "imagenes": [
+      "imagenes/remera20.1.jpg",
+      "imagenes/remera20.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera blanca",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 4",
+    "imagenes": [
+      "imagenes/remera21.1.jpg",
+      "imagenes/remera21.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera negra",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 5",
+    "imagenes": [
+      "imagenes/remera22.1.jpg",
+      "imagenes/remera22.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera verde",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 4",
+    "imagenes": [
+      "imagenes/remera23.1.jpg",
+      "imagenes/remera23.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera rosa",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 2",
+    "imagenes": [
+      "imagenes/remera24.1.jpg",
+      "imagenes/remera24.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera azul",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 3",
+    "imagenes": [
+      "imagenes/remera25.1.jpg",
+      "imagenes/remera25.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera gris",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 3",
+    "imagenes": [
+      "imagenes/remera26.1.jpg",
+      "imagenes/remera26.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera verde",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 3",
+    "imagenes": [
+      "imagenes/remera27.1.jpg",
+      "imagenes/remera27.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera verde",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 3",
+    "imagenes": [
+      "imagenes/remera28.1.jpg",
+      "imagenes/remera28.2.jpg"
+    ]
+  },
+   {
+    "categoria": "remeras",
+    "titulo": "Remera azul",
+    "precio": "$13.000",
+    "stock": 1,
+    "descripcion": "Remera de excelente calidad Talle 5",
+    "imagenes": [
+      "imagenes/remera29.1.jpg",
+      "imagenes/remera29.2.jpg"
+    ]
   }
 ]
+
 
