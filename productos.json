@@ -260,7 +260,7 @@
     "categoria": "remeras",
     "titulo": "Remera rosa",
     "precio": "$13.000",
-    "stock": 1,
+    "stock": "Sin stock",
     "descripcion": "Remera de excelente calidad Talle 2",
     "imagenes": [
       "imagenes/remera24.1.jpg",
@@ -323,5 +323,6 @@
     ]
   }
 ]
+
 
 
